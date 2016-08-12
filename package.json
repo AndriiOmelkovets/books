@@ -1,0 +1,14 @@
+{
+  "name": "book2",
+  "version": "0.0.0",
+  "description": "book2",
+  "main": "app.js",
+  "author": {
+    "name": "Andrii"
+  },
+  "dependencies": {
+    "express": "3.4.4",
+    "jade": "*",
+    "mongoose": "*"
+  }
+}

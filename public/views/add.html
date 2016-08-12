@@ -1,0 +1,15 @@
+﻿<div class="wrap-add-edit-book">
+	<h2>Add</h2>
+	<form ng-submit="vm.addBook()">
+		<input type="text" value="" placeholder="author"  ng-model="vm.newBook.author"/>
+		<input type="text" value="" placeholder="Title"  ng-model="vm.newBook.title"/>
+		<textarea name cols="50" rows="15" placeholder="Description" ng-model="vm.newBook.description"></textarea>
+        <select ng-model="vm.newBook.status">
+            <option disabled ng-selected="true">status</option>
+            <option value="true">on</option>
+            <option value="false">off</option>
+        </select>
+		<input type="reset" value="Cancel" />
+		<input type="submit" value="Submit" />
+	</form>
+</div>

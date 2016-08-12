@@ -1,0 +1,130 @@
+header {
+    height: 30px;
+    width: 80%;
+    margin: 20px auto 0;
+    border: 1px solid black;
+}
+
+.nav {
+    display: flex;
+    height: 100%;
+    line-height: 30px;
+}
+
+    .nav li {
+        padding: 0 20px;
+    }
+
+.wrap-content {
+    width: 80%;
+    margin: 20px auto;
+}
+
+.wrap-table .search-book {
+    float: right;
+    border-radius: 15px;
+    width: 50%;
+    outline: none;
+    padding: 4px 10px;
+}
+
+.wrap-table h2 {
+    clear: both;
+    margin: 10px 0;
+}
+
+.wrap-table table {
+    border-collapse: collapse;
+    border: 1px solid black;
+    width: 100%;
+}
+
+    .wrap-table table th {
+        padding: 5px;
+        background: rgb(228, 223, 223);
+        border: 1px solid black;
+    }
+
+    .wrap-table table tr {
+        outline: none;
+    }
+
+        .wrap-table table tr:hover {
+            background: rgb(237, 237, 237);
+        }
+
+    .wrap-table table td {
+        padding: 10px;
+        border: 1px solid black;
+        text-align: center;
+    }
+
+    .wrap-table table .starRating:not(old) {
+        display: inline-block;
+        width: 7.5em;
+        height: 1.5em;
+        overflow: hidden;
+        vertical-align: bottom;
+    }
+
+        .wrap-table table .starRating:not(old) > input {
+            display: none;
+        }
+
+.starRating:not(old) > label {
+    display: block;
+    float: right;
+    position: relative;
+    background: url('../img/star-off.svg');
+    background-size: contain;
+}
+
+    .starRating:not(old) > label:before {
+        content: '';
+        display: block;
+        width: 1.5em;
+        height: 1.5em;
+        background: url('../img/star-on.svg');
+        background-size: contain;
+        opacity: 0;
+        transition: opacity 0.2s linear;
+    }
+
+    .starRating:not(old) > label:hover:before,
+    .starRating:not(old) > label:hover ~ label:before,
+    .starRating:not(:hover) > :checked ~ label:before {
+        opacity: 1;
+    }
+
+.wrap-table table .book-status {
+    justify-content: center;
+}
+
+md-switch.md-checked ._md-thumb {
+    background-color: rgb(0, 149, 255);
+}
+
+md-switch.md-checked ._md-bar {
+    background-color: rgba(0, 149, 255,0.5);
+}
+
+.wrap-table table .button-book {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    width: 40%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+/*style for edit/add book */
+
+.wrap-add-edit-book {
+    width: 50%;
+}
+
+    .wrap-add-edit-book input, .wrap-add-edit-book textarea {
+        width: 100%;
+        box-sizing: border-box;
+        margin-bottom: 5px;
+    }
